@@ -12,5 +12,6 @@ headLines = 3
 t, chanA, chanB = numpy.genfromtxt(fileName, skip_header=headLines, unpack=True, delimiter=',')
 
 # now we plot the files
-plt.plot(t, chanA, 'k--')
+plt.plot(t, chanA, 'k')
+plt.axis([-6,6,0,1])
 plt.show()		# don't forget this!
